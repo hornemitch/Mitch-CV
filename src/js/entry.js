@@ -5,7 +5,8 @@ require("./sideBarToggle");
 require("../styles/bootstrap-no-padding.less");
 require("../styles/main-body.less");
 require("../styles/side-bar.less");
+require("../styles/contact-div.less");
 
 $(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();
+    $('[data-toggle="tooltip"]').tooltip({placement: "right", trigger: "hover"});
 });
