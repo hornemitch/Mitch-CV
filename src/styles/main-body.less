@@ -1,20 +1,19 @@
-body{
-  font-family: "orbitron", sans-serif;
-  text-align: center;
-}
-
 #main-body{
   transition: all .3s;
-  z-index: 0;
 }
 
-h1,h2,h3,h4,h5,h6{
-  display: inline-block;
-  margin: 5px;
+#main-body #heading{
+  background: #fff;
+  color: #222;
+  transition: all .3s;
+  overflow: hidden;
 }
-
-.tooltip{
-  background: #000;
-  border-radius: 30px;
-  font-size: .6em;
+#main-body .show-heading{
+  box-shadow: 0 0 15px 7.5px #000;
+  height: 50px;
+  position: relative;
+  z-index: 1;
+}
+#main-body .hide-heading{
+  height: 0;
 }

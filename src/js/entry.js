@@ -3,6 +3,7 @@ require("bootstrap-webpack");
 require("font-awesome-webpack");
 require("./sideBarToggle");
 require("../styles/bootstrap-no-padding.less");
+require("../styles/general.less");
 require("../styles/main-body.less");
 require("../styles/side-bar.less");
 require("../styles/contact-div.less");

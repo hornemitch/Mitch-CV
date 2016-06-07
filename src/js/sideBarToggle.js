@@ -1,4 +1,5 @@
 let mainBody = $("#main-body");
+let mainHeading = $("#heading");
 let sideBar = $(".side-bar");
 let hideSideBarButton = $("#hide-side-bar");
 let showSideBarButton = $("#show-side-bar ");
@@ -10,6 +11,8 @@ hideSideBarButton.on('click', () => {
 
     mainBody.addClass("col-md-12");
     mainBody.removeClass("col-md-9 col-md-offset-3");
+    mainHeading.addClass("show-heading");
+    mainHeading.removeClass("hide-heading");
 });
 
 showSideBarButton.on('click', () => {
@@ -19,4 +22,6 @@ showSideBarButton.on('click', () => {
 
     mainBody.addClass("col-md-9 col-md-offset-3");
     mainBody.removeClass("col-md-12");
+    mainHeading.addClass("hide-heading");
+    mainHeading.removeClass("show-heading");
 });
