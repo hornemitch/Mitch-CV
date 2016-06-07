@@ -2,25 +2,35 @@
 
 @mainFontC: #79CDCD;
 
+@profileBack: #aaa;
+
 @surfaceShadow: 10px 5px 10px #000;
 
 .side-bar{
   background: @backC;
   box-shadow: @surfaceShadow;
   height: 100vh;
+  position: fixed;
   text-align: center;
-  width: 100%;
 }
 
-.side-bar-main-heading{
+.side-bar hr{
+  border: 0;
+  background-image: linear-gradient(to right, rgba(255,255,255,0), @mainFontC, rgba(255,255,255,0));
+  height: 1px;
+  margin-bottom: 0;
+  width: 75%;
+}
+
+.side-bar .main-heading{
   color: @mainFontC;
   font-weight: 400;
   margin: 0;
   padding-top: 15px;
 }
 
-.side-bar-picture{
-  background: #fff;
+.side-bar .profile-picture{
+  background: @profileBack;
   border: .5px solid #000;
   border-radius: 25%;
   box-shadow: @surfaceShadow;
@@ -29,17 +39,50 @@
   width: 85%;
 }
 
-.side-bar-sub-heading-container{
+.side-bar .sub-heading-container{
   padding: 50px 0 0 10px;
   text-align: left;
 }
-.side-bar-sub-heading{
+.side-bar .sub-heading{
   color: @mainFontC;
   font-weight: 400;
 }
 
-.side-bar-description-container{
+.side-bar .description-container{
   color: @mainFontC;
   font-weight: 400;
   text-align: justify;
+}
+
+.side-bar .personal-interest-container{
+  color: @mainFontC;
+  padding: 20px 0 0 0;
+  text-align: left;
+}
+.side-bar .personal-interest-container h2{
+  text-align: center;
+}
+.side-bar .personal-interest-container ul{
+  list-style: none;
+}
+.side-bar .personal-interest-container i{
+  color: #fff;
+  font-size: 1.5em;
+  padding-right: 15px;
+}
+
+.side-bar .personalty-container{
+  color: @mainFontC;
+  font-weight: 400;
+  text-align: center;
+}
+.side-bar .personalty-container a{
+  color: @mainFontC;
+  text-decoration: none;
+  transition: all .3s;
+}
+.side-bar .personalty-container a:hover{
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 5px #fff;
 }
