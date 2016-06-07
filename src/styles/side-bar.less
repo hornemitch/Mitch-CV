@@ -1,10 +1,7 @@
 @backC: #323232;
-
 @mainFontC: #79CDCD;
-
 @profileBack: #aaa;
-
-@surfaceShadow: 10px 5px 10px #000;
+@surfaceShadow: 10px 0 10px #000;
 
 .side-bar{
   background: @backC;
@@ -13,13 +10,43 @@
   position: fixed;
   text-align: center;
 }
+.hide-side-bar{
+  left: -25%;
+}
+
+.side-bar-button {
+   background: @backC;
+   border: none;
+   border-radius: 0 0 25px 0;
+   box-shadow: @surfaceShadow;
+   font-size: 2em;
+   left: 100%;
+   padding: 5px 15px;
+   position: absolute;
+ }
+.side-bar-button i{
+  color: @mainFontC;
+  transition: all .3s;
+}
+.side-bar-button i:hover{
+  color:#fff;
+  text-shadow: 0 0 5px #fff;
+}
+.side-bar .hide-side-bar-button{
+  display: none;
+}
 
 .side-bar hr{
   border: 0;
   background-image: linear-gradient(to right, rgba(255,255,255,0), @mainFontC, rgba(255,255,255,0));
   height: 1px;
   margin-bottom: 0;
-  width: 75%;
+  width: 60%;
+}
+.side-bar i{
+  color: #fff;
+  display: inline-block;
+  font-size: 1.5em;
 }
 
 .side-bar .main-heading{
@@ -57,10 +84,10 @@
 .side-bar .personal-interest-container{
   color: @mainFontC;
   padding: 20px 0 0 0;
-  text-align: left;
-}
-.side-bar .personal-interest-container h2{
   text-align: center;
+}
+.side-bar .personal-interest-container .content{
+  text-align: left;
 }
 .side-bar .personal-interest-container ul{
   list-style: none;
