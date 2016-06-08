@@ -2,6 +2,7 @@ require('expose?$!expose?jQuery!jquery');
 require("bootstrap-webpack");
 require("font-awesome-webpack");
 require("./sideBarToggle");
+require("./skillTabToggle");
 require("../styles/bootstrap-no-padding.less");
 require("../styles/general.less");
 require("../styles/main-body.less");
