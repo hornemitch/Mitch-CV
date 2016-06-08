@@ -1,5 +1,5 @@
 @mainFontC: #79CDCD;
-@badIconC: #CD0000;
+@badIconC: #999;
 
 .skills-div{
   background: #151515;
@@ -20,9 +20,8 @@
   background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1), rgba(255,255,255,0));
   border: 0;
   height: 1px;
-  margin: 5px 0 15px;
-  padding: 0;
-  width:100%;
+  margin: 5px 12.5% 15px;
+  width:75%;
 }
 
 .skills-div .skill-list-div i{
@@ -52,25 +51,30 @@
 }
 .skills-div .skill-list-div .skill-row-show{
   height: 40px;
+  padding: 4px 0;
 }
 .skills-div .skill-list-div .skill-row-hide{
-  height: 0px;
+  height: 0;
 }
+.skills-div .skill-list-div .skill-row-hide hr{
+  height: 0;
+}
+
 
 .skills-div .first-icon{
   margin-left: 20px;
 }
 .skills-div .active-icon{
   color: @mainFontC;
-  text-shadow: 0 0 10px @mainFontC;
+  text-shadow: 0 0 5px @mainFontC;
 }
 .skills-div .semi-active-icon{
   color: #FFB90F;
-  text-shadow: 0 0 10px #FFB90F;
+  text-shadow: 0 0 5px #FFB90F;
 }
 .skills-div .inactive-icon{
   color: #CD0000;
-  text-shadow: 0 0 10px @badIconC;
+  text-shadow: 0 0 5px @badIconC;
 }
 
 .skills-div .skill-list-div .icon-size-1{
