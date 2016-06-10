@@ -11,6 +11,6 @@ require("../styles/contact-div.less");
 require("../styles/skills-div.less");
 require("../styles/qualifications.less");
 
-$(document).ready(function(){
+$(document).ready(() => {
     $('[data-toggle="tooltip"]').tooltip({placement: "right", trigger: "hover"});
 });
