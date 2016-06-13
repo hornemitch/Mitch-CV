@@ -13,6 +13,10 @@ require("../styles/qualifications.less");
 require("../styles/experience.less");
 require("../styles/footer.less");
 
+$(window).load(function() {
+    $(".se-pre-con").fadeOut("slow");
+});
+
 $(document).ready(() => {
     $('[data-toggle="tooltip"]').tooltip({placement: "right", trigger: "hover"});
 });
