@@ -10,6 +10,8 @@ require("../styles/side-bar.less");
 require("../styles/contact-div.less");
 require("../styles/skills-div.less");
 require("../styles/qualifications.less");
+require("../styles/experience.less");
+require("../styles/footer.less");
 
 $(document).ready(() => {
     $('[data-toggle="tooltip"]').tooltip({placement: "right", trigger: "hover"});
